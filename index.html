@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET PDF</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        .form-container {
+             margin: 20px auto;
+            
+            border: 1px solid black;
+            width: 50%;
+            display: block;
+            box-shadow: 0 12px 2px 1px rgba(0, 0, 255, .2);
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            
+           
+            
+        }
+        .form * {
+            margin-bottom: 5px;
+        }
+        .form input {
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .form textarea {
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="/get-pdf" class="form" method="POST">
+            <label for="name">Name</label>
+            <input  type="text" name="name" id="name" class="name-input">
+            <label for="email">Email</label>
+            <input  type="text" name="email" id="email" class="email-input">
+            <label for="qual">Qualifications</label>
+            <textarea name="qual" id="qual" cols="30" rows="10"></textarea>
+            <button type="submit">GET PDF</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
